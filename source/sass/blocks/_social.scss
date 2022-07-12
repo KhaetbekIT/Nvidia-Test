@@ -1,0 +1,12 @@
+.social__link {
+  display: block;
+  width: 48px;
+  path {
+    fill: #808080;
+  }
+  &:hover{
+    path{
+        fill: #77B900;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+include ../global/_mixins
+doctype html
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible' content='ie=edge')
+		title
+			block title
+		meta(name='description' content='')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
+		//- add '?@@timestamp' postfix to assets files (styles, scripts, images...) for fix browser caching problems
+		link(rel='stylesheet' href='css/style.min.css?@@timestamp')
+	body
+		.page-wrapper
+			block variables
+				include ../global/_variables
+
+			block header
+				include ../global/header
+
+			block main
+
+			block footer
+				include ../global/footer
+
+			block modal
+
+		script(src='js/script.min.js?@@timestamp')

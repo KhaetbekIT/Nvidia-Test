@@ -1,0 +1,6 @@
+mixin card(iconName, span, title, text)
+	div.benefits__card 
+		div(class="card__icon " + iconName)  
+		h3.card__title.title-3 #[span !{span}] !{title}
+		.card__text 
+			p !{text}

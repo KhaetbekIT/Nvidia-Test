@@ -1,0 +1,66 @@
+
+//1.Обязательные переменные
+
+
+// Правила именования и применения перменных на проектах:
+
+
+//1.1 Цвета
+
+//Существительные, коротко и понятно. Без цифровых индексов.
+//Тона серого — по уровню серого, черный цвет - $black, белый - $white.
+//Все прочие цвета — по смыслу цвета, без упоминания цвета.
+//Не вносить в цветовые переменные значения, которые встречаются менее 3 раз в макетах.
+
+
+// 1.2. Типографика, контейнеры, сетка, отступы
+
+// Настройка проекта через переменные в config.scss, переменные в _variables.scss не меняем.
+// Не менять названия уже введенных  переменных.
+// Не удалять уже введенные переменные.
+
+
+$white:                                    #ffffff;
+$black:                                    #000000;
+
+$body-bg:                                  $white;
+$body-color:                               $black;
+$link-color:                               $black;
+$link-decoration:                          underline;
+$link-hover-color:                         $black;
+$link-hover-decoration:                    none;
+
+//Grids
+$grid-breakpoints: (
+	xs: 0,
+	sm: 480px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+$grid-columns:                             12;
+$grid-gutter-width:                        30px;
+$grid-row-columns:                         6;
+
+$container-max-widths: (
+	xs: 1140px,
+) !default;
+
+//Typography
+$font-family-base:                         'Montserrat',Arial, sans-serif;
+$font-family-secondary:                    $font-family-base;
+$headings-font-family:                     $font-family-secondary;
+$btn-font-family:                          $font-family-secondary;
+$headings-font-weight:                     700;
+$font-size-base:                           1rem;
+$font-size-sm:                             1rem;
+
+$line-height-base:                         1.75;
+$paragraph-margin-bottom-base:             28px;
+
+//if we have common margin-bottom for all headings we can change this value
+$headings-margin-bottom:                   0;
+
+
+//2.Опциональные переменные
