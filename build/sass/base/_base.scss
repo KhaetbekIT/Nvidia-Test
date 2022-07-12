@@ -71,6 +71,7 @@ audio {
 }
 
 // ----------------------------------------
+
 .container {
   width: 320px;
   margin-right: auto;
@@ -78,7 +79,7 @@ audio {
   padding-right: 15px;
   padding-left: 15px;
   @media (min-width: 1140px) {
-    width: (1110px + 30);
+    width: 1140px;
   }
 }
 

@@ -1,0 +1,8 @@
+.heading {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+}
+
+.heading-h1 {
+	@extend .heading;
+}

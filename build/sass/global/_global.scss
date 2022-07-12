@@ -1,0 +1,10 @@
+// глобальные стили кроме normalize
+
+.container {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
+img {
+	@include img-fluid();
+}
