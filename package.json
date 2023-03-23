@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gulp": "4.0.2",
+    "bootstrap": "4.4.1",
+    "bootstrap-gulp": "3.1.5-beta",
+    "magnific-popup": "1.1.0",
+    "roboto-fontface-pre-css": "0.0.3"
+  }
+}

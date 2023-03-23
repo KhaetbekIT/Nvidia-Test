@@ -1,0 +1,16 @@
+{
+  "htDeny": true,
+  "destPath": "dist",
+  "additionalAssets": {
+    "node_modules/roboto-fontface-pre-css/fonts/**/*": "fonts"
+  },
+  "additionalScript": [
+    "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"
+  ],
+  "additionalStyle": [
+    "node_modules/magnific-popup/dist/magnific-popup.css"
+  ],
+  "additionalSCSSPaths": [
+    "node_modules/roboto-fontface-pre-css/css/"
+  ]
+}

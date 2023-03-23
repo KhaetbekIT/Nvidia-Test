@@ -1,0 +1,12 @@
+#helloModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Gulp is watching you!
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true') &times;
+			.modal-body
+				| 'Hello world' from main.js
+			.modal-footer
+				button.btn.btn-secondary(type='button' data-dismiss='modal') Oh...
+				button.btn.btn-primary(type='button') No way!

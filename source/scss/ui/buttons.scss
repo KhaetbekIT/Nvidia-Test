@@ -1,0 +1,13 @@
+.button {
+	@include font-size(18px);
+	font-family: $btn-font-family;
+}
+
+.btn {
+	@extend .button;
+
+	&--secondary {
+
+	}
+}
+
