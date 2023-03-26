@@ -1,9 +1,17 @@
 {
   "dependencies": {
-    "gulp": "4.0.2",
     "bootstrap": "4.4.1",
     "bootstrap-gulp": "3.1.5-beta",
     "magnific-popup": "1.1.0",
     "roboto-fontface-pre-css": "0.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.60.0"
   }
 }
