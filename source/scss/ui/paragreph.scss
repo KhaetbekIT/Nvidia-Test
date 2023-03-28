@@ -1,0 +1,22 @@
+%paragreph{
+    font-family: $roboto;
+    font-weight: 400;
+    color: #0F1317;
+}
+
+.body {
+    @extend %paragreph;
+    &-1 {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        
+    }
+}
+
+.caption {
+    @extend %paragreph;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
