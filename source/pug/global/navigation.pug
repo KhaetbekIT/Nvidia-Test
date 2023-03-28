@@ -5,9 +5,11 @@ div(class="navbar--mobile__wrapper hidden", id="navbar-mobile-js")
         a(href="#!", class="navbar__link navbar--mobile__link") Experience
     div(class="navbar--mobile__social") 
         a(href="#!") 
-            img(src="./images/social/twitter-icon.svg", alt="twitter")
+            //- img(src="./images/social/twitter-icon.svg", alt="twitter")
+            include ./../elements/twitter.pug
         a(href="#!") 
-            img(src="./images/social/instagram-icon.svg", alt="instagram")
+            //- img(src="./images/social/instagram-icon.svg", alt="")
+            include ./../elements/insta.pug
     
 
 nav(class="nav")
@@ -23,8 +25,10 @@ nav(class="nav")
                     a(href="#!", class="navbar__link") Experience
             .nav__social
                 a(href="#!") 
-                    img(src="./images/social/twitter-icon.svg", alt="")
+                    //- img(src="./images/social/twitter-icon.svg", alt="twitter")
+                    include ./../elements/twitter.pug
                 a(href="#!") 
-                    img(src="./images/social/instagram-icon.svg", alt="")
+                    //- img(src="./images/social/instagram-icon.svg", alt="")
+                    include ./../elements/insta.pug
             div(class="navbar--mobile", id="navbar-burger-js") 
                 .burger
