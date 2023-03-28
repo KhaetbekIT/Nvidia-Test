@@ -1,0 +1,83 @@
+.main {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.3) 100%), url("./../images/bg-images/bg-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 125px;
+
+    @media(max-width: $media) {
+        padding: 60px 0 62px;
+    }
+
+    &__top {
+        text-align: center;
+        max-width: 730px;
+        margin: 0 auto;
+
+        &>*+* {
+            margin-top: 20px;
+        }
+
+        @media(max-width: $media) {
+            max-width: 100%;
+        }
+    }
+
+    &__title,
+    &__text {
+        color: #fff !important;
+    }
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+
+    &__item {
+        width: 255px;
+
+        &>*+* {
+            margin-top: 28px;
+        }
+
+        .benefits__desc {
+            &>*+* {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    &__text,
+    &__title {
+        color: #fff !important;
+    }
+
+    &__title {
+        .bold {
+            color: #77B900;
+        }
+    }
+}
+
+svg {
+    .icon {
+        &-stroke {
+            stroke: white;
+            stroke-width: 3;
+        }
+    }
+
+    &:hover {
+        .icon {
+            &-stroke {
+                stroke: #77B900;
+            }
+        }
+
+        &>g>path {
+            fill: rgba(119, 185, 0, 0.25);
+        }
+    }
+}

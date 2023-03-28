@@ -1,0 +1,9 @@
+mixin benefitsItem(titleBold, title, body, img)
+    .benefits__item
+        .benefits__icon 
+            //- img(src="./images/icon-1.svg", alt="Error")
+            | !{img}
+        .benefits__desc
+            h3(class="heading heading-3 benefits__title") #[b(class="bold") !{titleBold}] !{title}
+            div(class="body body-1 benefits__text")
+                | !{body}

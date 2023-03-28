@@ -12,9 +12,6 @@
 @import "./base/base-var";
 @import "fonts/fonts.scss";
 @import "./base/base";
-@import "./blocks/container";
-@import "./blocks/navbar";
-@import "./blocks/social";
 // @import "mixins";
 // @import "functions";
 // @import "variables";
@@ -24,6 +21,9 @@
 
 
 @import "global/global.scss";
-// @import "blocks/**/*.scss";
+@import "./blocks/container";
+@import "./blocks/navbar";
+@import "./blocks/social";
+@import "./blocks/main";
 @import "ui/heading.scss";
 @import "ui/paragreph.scss";
