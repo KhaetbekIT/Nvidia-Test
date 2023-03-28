@@ -8,9 +8,7 @@ html(lang="ru")
 			block title
 		meta(name='description' content='')
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-		link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
-		//- add '?@@timestamp' postfix to assets files (styles, scripts, images...) for fix browser caching problems
-		link(rel='stylesheet' href='css/style.min.css?@@timestamp')
+		link(rel='stylesheet' href='./css/main.css')
 	body
 		.page-wrapper
 			block variables
@@ -26,4 +24,4 @@ html(lang="ru")
 
 			block modal
 
-		script(src='js/script.min.js?@@timestamp')
+		script(src='./js/main.js')
