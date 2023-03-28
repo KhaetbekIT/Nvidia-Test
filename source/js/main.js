@@ -1,23 +1,8 @@
-// Для добавления функционала используем классы с префиксом js, стилизовать по этим классам нельзя
+const navbarMobile = document.querySelector("#navbar-mobile-js")
+const navbarBurger = document.querySelector("#navbar-burger-js")
 
-$(document).ready(function(){
-
-	// $('input[type=tel]')
-	// 	.inputmask("8 (999) 999 99 99");
-
-
-	// $('.js-popup-img')
-	// 	.magnificPopup({
-	// 		type:'image',
-	// 		closeOnContentClick: true,
-	// 		fixedContentPos: true,
-	// 		mainClass: 'mfp-no-margins mfp-with-zoom',
-	// 		image: {
-	// 			verticalFit: true
-	// 		},
-	// 		zoom: {
-	// 			enabled: true,
-	// 			duration: 300
-	// 		}
-	// 	});
-});
+navbarBurger.addEventListener("click", ()=>{
+	navbarBurger.classList.toggle("active")
+	navbarMobile.classList.toggle("hidden")
+	document.body.classList.toggle("no-scroll")
+})

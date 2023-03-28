@@ -9,7 +9,11 @@
 
 /*Bootrap4 imports*/
 @import "config";
+@import "./base/base-var";
 @import "fonts/fonts.scss";
+@import "./base/base";
+@import "./blocks/container";
+@import "./blocks/navbar";
 // @import "mixins";
 // @import "functions";
 // @import "variables";
@@ -18,7 +22,7 @@
 // @import "modal";
 
 
-// @import "global/**/*.scss";
+@import "global/global.scss";
 // @import "blocks/**/*.scss";
 @import "ui/heading.scss";
 @import "ui/paragreph.scss";

@@ -10,18 +10,7 @@ html(lang="ru")
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		link(rel='stylesheet' href='./css/main.css')
 	body
-		.page-wrapper
-			block variables
-				include ../global/_variables
-
-			block header
-				include ../global/header
-
-			block main
-
-			block footer
-				include ../global/footer
-
-			block modal
+		
+		include ./../global/navigation.pug
 
 		script(src='./js/main.js')
