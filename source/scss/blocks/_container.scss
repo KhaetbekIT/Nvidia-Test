@@ -1,0 +1,12 @@
+$conatiner-padding: 15px;
+$conatiner : 1110px + $conatiner-padding;
+$container-sm: 320px;
+
+.container{
+    width: $conatiner;
+    padding: 0 $conatiner-padding;
+    margin: 0 auto;
+    @media (max-width: $conatiner){
+        width: $container-sm;
+    }
+}

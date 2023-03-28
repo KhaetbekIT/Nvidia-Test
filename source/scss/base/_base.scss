@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    &,
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body{
+    font-family: $roboto;
+    font-weight: 400;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+svg, img, video{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+span, label, a, button, textarea, input{
+    display: inline-block;
+    font-family: inherit;
+}
+a, button, textarea, input{
+    cursor: pointer;
+}

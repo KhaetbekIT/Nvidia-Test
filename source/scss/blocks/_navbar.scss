@@ -1,0 +1,102 @@
+.nav {
+    background: #000000;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+
+    &__social {
+        & > * + *{
+            margin-left: 12px;
+        }
+        @media(max-width: $media) {
+            display: none;
+        }
+    }
+
+    &bar {
+        &__link {
+            padding: 31px 24px;
+            text-decoration: none;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &.navbar--mobile__link{
+                padding: 14px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media(max-width: $media) {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+            width: 56px;
+            height: 56px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            @media(max-width: $media) {
+                display: flex;
+            }
+            &:hover,&.active{
+                background: #77B900;
+            }
+            &__wrapper{
+                position: fixed;
+                top: 56px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #000000;
+                &.hidden{
+                    display: none;
+                }
+            }
+            &__social{
+                margin-top: 277px;
+                text-align: center;
+                & > * + *{
+                    margin-left: 12px;
+                }
+            }
+
+            .burger{
+                width: 25px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 1px;
+                position: relative;
+                &::after, &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 25px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+                &::before{
+                    top: -4px;
+                }
+                &::after{
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,10 +1,7 @@
 // глобальные стили кроме normalize
-
-.container {
-	@include make-container();
-	@include make-container-max-widths();
-}
-
-img {
-	@include img-fluid();
+.logo{
+	width: 81px;
+	@media(max-width: $media) {
+		width: 45px;
+	}
 }
