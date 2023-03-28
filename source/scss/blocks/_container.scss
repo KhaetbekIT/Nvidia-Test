@@ -1,5 +1,5 @@
 $conatiner-padding: 15px;
-$conatiner : 1110px + $conatiner-padding;
+$conatiner : 1110px + ($conatiner-padding * 2);
 $container-sm: 320px;
 
 .container{
