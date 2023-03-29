@@ -1,7 +1,26 @@
 // глобальные стили кроме normalize
-.logo{
+.logo {
 	width: 81px;
+
 	@media(max-width: $media) {
 		width: 45px;
+	}
+}
+
+.button {
+	outline: none;
+	padding: 17.5px 60px;
+	background: #77B900;
+	border: 2px solid #77B900;
+	font-family: $play;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.25px;
+	color: #FFFFFF;
+	transition: .3s linear;
+	&:hover{
+		background: #000000;
+		box-shadow: 0px 0px 10px #77B900;
 	}
 }
