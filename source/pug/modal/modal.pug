@@ -1,0 +1,11 @@
+div(class="modal", id="modal-js")
+	.container 
+		.modal__wrap
+			div(class="modal__content") 
+				div(class="modal__close", id="modal-close-js") 
+					include ../elements/close.pug
+				h3(class="heading heading-3 modal__title") ПРЕИМУЩЕСТВА G-SYNC
+				form(class="form modal__form")
+					input(type="text", placeholder="Имя", class="input body-1", required)
+					input(type="email", placeholder="Mail", class="input body-1", required)
+					button(class="button", id="button-js") КУПИТЬ
