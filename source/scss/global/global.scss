@@ -23,4 +23,8 @@
 		background: #000000;
 		box-shadow: 0px 0px 10px #77B900;
 	}
+
+	@media (max-width: $media){
+		width: 100%;
+	}
 }
