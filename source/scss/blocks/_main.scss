@@ -26,12 +26,15 @@
     &__text {
         color: #fff !important;
     }
+    &__buttons{
+        text-align: center;
+    }
 }
 
 .benefits {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding: 50px 0;
     flex-wrap: wrap;
     column-gap: 30px;
 
