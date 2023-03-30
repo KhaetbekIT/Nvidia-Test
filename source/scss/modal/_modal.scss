@@ -6,7 +6,8 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     display: none;
-    &.show{
+
+    &.show {
         display: block;
     }
 
@@ -51,8 +52,8 @@
 
     &__close {
         position: absolute;
-        top: 12px;
-        right: 12px;
+        top: 10px;
+        right: 10px;
 
         svg {
             cursor: pointer;
@@ -65,8 +66,8 @@
             }
 
             &:hover {
-                g{
-                    path{
+                g {
+                    path {
                         stroke: #77B900;
                     }
                 }
@@ -84,7 +85,8 @@
     outline: none;
     width: 100%;
     padding: 14px 20px;
-    &:focus{
+
+    &:focus {
         box-shadow: 0px 0px 20px rgba(119, 185, 0, 0.5);
     }
 }
