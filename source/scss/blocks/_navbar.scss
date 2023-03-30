@@ -47,6 +47,7 @@
             cursor: pointer;
             @media(max-width: $media) {
                 display: flex;
+                margin-right: -15px;
             }
             &:hover,&.active{
                 background: #77B900;
@@ -58,6 +59,7 @@
                 right: 0;
                 bottom: 0;
                 background: #000000;
+                padding-top: 15px;
                 &.hidden{
                     display: none;
                 }
@@ -71,7 +73,7 @@
             }
 
             .burger{
-                width: 25px;
+                width: 28px;
                 height: 2px;
                 background-color: #fff;
                 border-radius: 1px;
@@ -80,15 +82,15 @@
                     content: "";
                     position: absolute;
                     left: 0;
-                    width: 25px;
+                    width: 28px;
                     height: 2px;
                     background-color: #fff;
                 }
                 &::before{
-                    top: -4px;
+                    top: -6px;
                 }
                 &::after{
-                    top: 4px;
+                    top: 6px;
                 }
             }
         }
