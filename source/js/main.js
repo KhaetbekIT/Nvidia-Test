@@ -37,3 +37,4 @@ const ModalFunc = () => {
 
 Navigation()
 ModalFunc()
+WindowEventFunc()
