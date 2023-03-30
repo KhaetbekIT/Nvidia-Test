@@ -44,6 +44,14 @@
         row-gap: 50px;
     }
 
+    &__icon {
+        margin: 0 auto;
+        width: 160px;
+        @media (max-width: $media) {
+            width: 159px;
+        }
+    }
+
     &__item {
         width: 255px;
 
@@ -93,6 +101,10 @@
     &__title {
         .bold {
             color: #77B900;
+        }
+
+        @media (max-width: $media) {
+            text-align: center;
         }
     }
 }
