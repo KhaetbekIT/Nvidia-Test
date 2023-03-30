@@ -26,7 +26,8 @@
     &__text {
         color: #fff !important;
     }
-    &__buttons{
+
+    &__buttons {
         text-align: center;
     }
 }
@@ -38,8 +39,17 @@
     flex-wrap: wrap;
     column-gap: 30px;
 
+    @media (max-width: $media) {
+        column-gap: 0px;
+        row-gap: 50px;
+    }
+
     &__item {
         width: 255px;
+
+        @media (max-width: $media) {
+            width: 100%;
+        }
 
         &>*+* {
             margin-top: 28px;
@@ -48,6 +58,29 @@
         .benefits__desc {
             &>*+* {
                 margin-top: 12px;
+            }
+        }
+
+        svg {
+            .icon {
+                &-stroke {
+                    stroke: white;
+                    stroke-width: 3;
+                }
+            }
+        }
+
+        &:hover {
+            svg {
+                .icon {
+                    &-stroke {
+                        stroke: #77B900;
+                    }
+                }
+
+                &>g>path {
+                    fill: rgba(119, 185, 0, 0.25);
+                }
             }
         }
     }
@@ -60,27 +93,6 @@
     &__title {
         .bold {
             color: #77B900;
-        }
-    }
-}
-
-svg {
-    .icon {
-        &-stroke {
-            stroke: white;
-            stroke-width: 3;
-        }
-    }
-
-    &:hover {
-        .icon {
-            &-stroke {
-                stroke: #77B900;
-            }
-        }
-
-        &>g>path {
-            fill: rgba(119, 185, 0, 0.25);
         }
     }
 }
