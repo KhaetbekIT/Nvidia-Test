@@ -1,40 +1,40 @@
-const WindowEventFunc = () => {
-	window.addEventListener("resize", () => {
-		navbarBurger.classList.remove("active")
-		document.body.classList.remove("no-scroll")
-		navbarMobile.classList.add("hidden")
-	})
-}
+console.clear();
 
-const Navigation = () => {
-	const navbarMobile = document.querySelector("#navbar-mobile-js")
-	const navbarBurger = document.querySelector("#navbar-burger-js")
-
-	navbarBurger.addEventListener("click", () => {
-		navbarBurger.classList.toggle("active")
-		navbarMobile.classList.toggle("hidden")
-		document.body.classList.toggle("no-scroll")
-	})
-
-	WindowEventFunc()
-}
-
-const ModalFunc = () => {
+window.addEventListener("DOMContentLoaded", () => {
+	const btn = document.querySelector("#button-js")
 	const modal = document.querySelector("#modal-js")
-	const button = document.querySelector("#button-js")
-	const closeMdal = modal.querySelector("#modal-close-js")
+	const close = modal.querySelector("#modal-close-js")
 
-	button.addEventListener("click", ()=>{
-		modal.classList.toggle("show")
+	const navburger = document.querySelector("#navbar-burger-js")
+	const navbar = document.querySelector("#navbar-mobile-js")
+
+	const body = document.body
+
+	btn.addEventListener("click", () => {
+		modal.classList.add("show")
 	})
 
-	closeMdal.addEventListener("click", ()=>{
-		modal.classList.remove("show")
+	modal.addEventListener("click", (event) => {
+		if (
+			(event.target.classList.contains("show")) ||
+			(event.target.classList.contains("modal__wrap"))
+		) {
+			modal.classList.remove("show")
+		}
 	})
 
-	WindowEventFunc()
-}
+	close.addEventListener("click", () => modal.classList.remove("show"))
 
-Navigation()
-ModalFunc()
-WindowEventFunc()
+	navburger.addEventListener("click", () => {
+		navburger.classList.toggle("active")
+		navbar.classList.toggle("hidden")
+
+		body.classList.add("no-scroll")
+	})
+
+	window.addEventListener("resize", () => {
+		navburger.classList.remove("active")
+		navbar.classList.add("hidden")
+		body.classList.remove("no-scroll")
+	})
+})
